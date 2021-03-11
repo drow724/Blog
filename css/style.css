@@ -1,12 +1,48 @@
 @charset "UTF-8";
 
   body {
+  font-family: 'DOSMyungjo';
      background-color: blue;
+  margin: 0;
+  padding: 0;
    }
 
   div {
-     background-color: white;
+     background-color: #d3d3d3;
 }
-border {
-	5px double;
-} 
+
+nav {
+	font-family: 'DOSMyungjo';
+	text-align: center;
+ 	padding: 5px;
+  	background-color: #d3d3d3;
+}
+ul, h2 {
+
+  display: inline-block;
+}
+
+nav ul{
+
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 3em;
+  padding: 0 20px;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  
+  color: #fff;
+}
+
+nav h2{
+  font-size: 1.3em;
+}
