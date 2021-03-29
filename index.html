@@ -33,6 +33,13 @@ fetch(name).then(function(response){
 	})
 	 });
 }
+function fetchBoard(name){
+	fetch(name).then(function(response){
+		response.text().then(function(text){
+			document.querySelector('section').innerHTML = text;
+		})
+		 });
+	}
 function dp_menu1(){
     let click = document.getElementById("drop-content1");
     if(click.style.display === "none"){

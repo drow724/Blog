@@ -58,10 +58,11 @@ nav h2{
 }
 .button{
 	font-family: 'DOSMyungjo';
-    font-size:20px;
+    font-size:1.3em;;
     background-color: #1fe0; ;
     color: black;
     border: none;
+    padding: 2px 0px 2px;
 }
 #drop-content{
     z-index: 1;
@@ -71,28 +72,28 @@ nav h2{
 }
 #drop-content1 a{
     display:block;
-    font-size: 20px;
+    font-size: 1em;
     background-color: #1fe0; ;
     color: black;
     text-decoration: none;
-    padding: 10px 36px;
+    padding: 10px 0px 10px 10px;
     margin: 2px 0px 0px 0px;
 }
 #drop-content2 a{
     display:block;
-    font-size: 20px;
+    font-size: 1em;
     background-color: #1fe0; ;
     color: black;
     text-decoration: none;
-    padding: 10px 36px;
+    padding: 10px 0px 10px 10px;
     margin: 2px 0px 0px 0px;
 }
 #drop-content3 a{
     display:block;
-    font-size: 20px;
+    font-size: 1em;
     background-color: #1fe0; ;
     color: black;
     text-decoration: none;
-    padding: 10px 36px;
+    padding: 10px 0px 10px 10px;
     margin: 2px 0px 0px 0px;
 }

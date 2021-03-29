@@ -21,12 +21,17 @@
 </span>
   </nav>
 </header>
-<article>
-<div style="border: 5px double; width:auto; height:auto; position: absolute; left: 80px; padding: 10px 10px 10px 10px;">
+<div style="border: 5px double; width:auto; height:auto; position: absolute; left: 80px; padding: 10px 10px 10px 10px; margin-top: 10px;">
+<div class="dropdown">
+        <button onclick="fetchBoard('index.html')" class="button">최신글</button>
+        <div style="display: none;" id="drop-content">
+
+        </div>
+    </div>
 <div class="dropdown">
         <button onclick="dp_menu1()" class="button">컴퓨터 기초 지식</button>
         <div style="display: none;" id="drop-content1">
-            <a hreaf='#'>Column</a>
+            <a onclick="fetchBoard('Java/Column.html')">컴퓨터 지식 칼럼</a>
             <a hreaf='#'>하드웨어</a>
             <a hreaf='#'>인터넷</a>
         </div>
@@ -34,19 +39,19 @@
    <div class="dropdown">
         <button onclick="dp_menu2()" class="button">Java</button>
         <div style="display: none;" id="drop-content2">
-            <a hreaf='#'>Column</a>
+            <a hreaf='#'>자바 칼럼</a>
             <a hreaf='#'>자바의 정석</a>
         </div>
     </div>
     <div class="dropdown">
         <button onclick="dp_menu3()" class="button">Spring</button>
         <div style="display: none;" id="drop-content3">
-            <a hreaf='#'>Column</a>
-            <a hreaf='#'>Spring Boot</a>
+            <a hreaf='#'>스프링 칼럼</a>
+            <a hreaf='#'>스프링 부트</a>
         </div>
     </div>
 </div>
-    <div style="border: 5px double; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px;">
+<section style="border: 5px double; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px;">
     서블릿이란?(what is Servlet?)
     <br>
 ⦁	서버에서 웹페이지 등을 동적으로 생성하거나 데이터 처리를 수행하기 위해
@@ -70,9 +75,7 @@ JSP란?(what is JSP?)
 ※스트립트 기술이란?<br>
 ASP, PHP 처럼 미리 약속된 규정에 따라 간단한 키둬드를 조합하여 입력하면, 실행 시점에 각각의 키워드에 매핑이 되어 있는 어떤 코드로 변환 후에 실행되는 형태이다.<br>
 JSP는 Java소스로 사용하여 웹페이지에 접근하고 페이지 전환을 통하여 웹브라우저에 전달한다.<br>
-    
-    </div>
-</article>
-
+</section>
 </body>
+
 </html>
