@@ -119,14 +119,12 @@ nav h2{
   text-decoration:none;
   float:left;
   line-height:23px;
-  font-family:"Arial Black", Gadget, sans-serif;
   color:#000;
   border:2px solid #000;
   border-bottom:none;
   padding:2px;
   width:100px;
   height:25px;
-  text-align:center;
   display:block;
   background:#d3d3d3;
   -moz-border-radius-topleft:15px;
@@ -134,6 +132,8 @@ nav h2{
   -webkit-border-top-left-radius:15px;
   -webkit-border-top-right-radius:15px; 
   border-bottom-color: white;
+  font-size: 1.4em;
+  text-align: center;
  } 
 
  #navbar #holder ul li a:hover {
