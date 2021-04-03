@@ -25,8 +25,6 @@
 </article>
 </div>
 <script>
-var tab1;
-
 function fetchPage(name){
 fetch(name).then(function(response){
 	response.text().then(function(text){
@@ -72,69 +70,96 @@ function dp_menu3(){
     }
 }
 function dp_tab1(){
-    let click1 = document.getElementById("onlink1");
-    let click2 = document.getElementById("onlink2");
-    let click3 = document.getElementById("onlink3");
-    let click4 = document.getElementById("onbutton1");
+    let click1 = document.getElementById("+1");
+    let click2 = document.getElementById("home2");
+    let click3 = document.getElementById("+2");
+    let click4 = document.getElementById("home3");
+    let click5 = document.getElementById("+3");   
     if(click1.style.display === "block"){
         click1.style.display = "none";
         click2.style.display = "block";
         click3.style.display = "block";
     }
+    if(click4.style.display === "block"){
+        click1.style.display = "none";
+        click2.style.display = "block";
+        click3.style.display = "none";
+        click5.style.display = "none";
+        
+    }
 }
 function dp_tab2(){
-    let click3 = document.getElementById("onlink3");
-    let click4 = document.getElementById("onlink4");
-    let click5 = document.getElementById("onlink5");
-    if(click3.style.display === "block"){
-        click3.style.display = "none";
-        click4.style.display = "block";
-        click5.style.display = "block";
+    let click1 = document.getElementById("+2");
+    let click2 = document.getElementById("home3");
+    if(click1.style.display === "block"){
+        click1.style.display = "none";
+        click2.style.display = "block";
     }
 }
 
 function dp_tab_move1(){
-    let click2 = document.getElementById("onlink2");
-    let click = document.getElementById("onlink");
-    let click4 = document.getElementById("onlink4");
-    let click5 = document.getElementById("onlink5");
-    if(click2.style.background === "grey"){
-        click2.style.background = "white";
-        click.style.background= "grey";
-        click4.style.background= "grey";
+    let click1 = document.getElementById("home2");
+    let click2 = document.getElementById("home1");
+    let click3 = document.getElementById("home3");
+    if(click1.style.background === "grey"){
+        click1.style.background = "white";
+        click2.style.background= "grey";
+        click3.style.background= "grey";
         
     }
 }
 function dp_tab_move2(){
-    let click = document.getElementById("onlink");
-    let click2 = document.getElementById("onlink2");
-    let click4 = document.getElementById("onlink4");
-    if(click.style.background === "grey"){
-        click.style.background = "white";
+    let click1 = document.getElementById("home1");
+    let click2 = document.getElementById("home2");
+    let click3 = document.getElementById("home3");
+    if(click1.style.background === "grey"){
+        click1.style.background = "white";
         click2.style.background= "grey";
-        click4.style.background= "grey";
+        click3.style.background= "grey";
     }
 }
 function dp_tab_move3(){
-    let click4 = document.getElementById("onlink4");
-    let click = document.getElementById("onlink");
-    let click2 = document.getElementById("onlink2");
-    if(click4.style.background === "grey"){
-        click4.style.background = "white";
-        click.style.background= "grey";
+    let click1 = document.getElementById("home3");
+    let click2 = document.getElementById("home1");
+    let click3 = document.getElementById("home2");
+    if(click1.style.background === "grey"){
+        click1.style.background = "white";
         click2.style.background= "grey";
+        click3.style.background= "grey";
     }
 }
 function dp_del1(){
-    let click1 = document.getElementById("onbutton1");
-    let click2 = document.getElementById("onlink2");
-    let click3 = document.getElementById("onlink1");
-    let click4 = document.getElementById("onlink3");
-    if(click1.style.float === "right"){
-        click1.style.display = "none";
+    let click1 = document.getElementById("x1");
+    let click2 = document.getElementById("home2");
+    let click3 = document.getElementById("+1");
+    let click4 = document.getElementById("+2");
+    let click5 = document.getElementById("home3");
+    let click6 = document.getElementById("+3");   
+    if(click5.style.display === "none"){
         click2.style.display = "none";
         click3.style.display = "block";
-        click4.style.display = "none;";
+        click4.style.display = "none";
+    }
+    if(click5.style.display === "block") {
+    	click2.style.display = "none";
+    	click6.style.display = "block";
+    }
+}
+function dp_del2(){
+    let click1 = document.getElementById("x2");
+    let click2 = document.getElementById("home3");
+    let click3 = document.getElementById("+2");
+    let click4 = document.getElementById("+1");
+    let click5 = document.getElementById("+3");
+    if(click1.style.float === "right"){
+        click2.style.display = "none";
+        click3.style.display = "block";
+    }
+    if(click5.style.display === "block"){
+        click5.style.display = "none";
+        click3.style.display = "none";
+        click4.style.display = "block";
+        click2.style.display = "none";
     }
 }
 </script>
