@@ -6,42 +6,6 @@
 </head>
 <body>
 	<header>
-	 <div id="navbar" style="margin-bottom: 27px;">
-  <div id="holder"> 
-  <ul style="margin-top:20px;"> 
-   <li style="cursor:pointer">
-   <a onclick="dp_tab_move2()" id="home1" style="background:white;   ">
-   Home
-   </a>
-   </li>
-   <li style="cursor:pointer;"><a onclick="dp_tab1()" id="+1" style=" border: none; background-color: #d3d3d3; width:20px; margin-top:2px; display:block;   height:auto;">
-   +</a>
-   </li>
-   <li style="cursor:pointer"><a onclick="dp_tab_move1()" id="home2" style="display:none; background: grey">
-   Home
-   <button onclick="dp_del1()" id="x1" style=" border: none; background-color: #1fe0;height:auto; font-size: 0.8em; float:right;">
-   x
-	</button>
-   </a>
-   </li>
-   <li style="cursor:pointer;"><a onclick="dp_tab2()" id="+2" style=" border: none; background: #d3d3d3; width:20px; margin-top:2px; display:none;  height:auto; ">
-   +
-   </a>
-   </li>
-   <li style="cursor:pointer"><a onclick="dp_tab_move3()" id="home3" style="display:none;  background: grey">
-   Home
-   <button onclick="dp_del2()" id="x2" style=" border: none; background-color: #1fe0;height:auto; font-size: 0.8em; float:right;">
-   x
-	</button>
-   </a>
-   </li>
-   <li style="cursor:pointer;"><a onclick="dp_tab1()" id="+3" style=" border: none; background-color: #d3d3d3; width:20px; margin-top:2px; display:none;   height:auto;">
-   +
-   </a>
-   </li>
-  </ul> 
-  </div> <!-- end holder div --> 
- </div> <!-- end navbar div -->
 <nav>
 <div style="border: 2px double; margin-left: 220px; margin-right: 10px; padding: 2px; background-color: white;">
   <button type="button" id="" class="btn" style=" border: none; background-color: #1fe0; float:left; margin-left: 10px; margin-top:10px;">
@@ -57,7 +21,7 @@
   </div>
   </nav>
 </header>
-<div style="border: 5px double; width:auto; height:auto; position: absolute; left: 170px; padding: 10px 10px 10px 10px; margin-top: 10px; background-color: white;">
+<div class="dev-bar">
 <div class="dropdown">
         <button style="cursor:pointer" onclick="dp_menu1()" class="button">컴퓨터 기초 지식</button>
         <div style="display: none;" id="drop-content1">
