@@ -46,14 +46,15 @@ fetch(name).then(function(response){
 function fetchBoard(name){
 	var name1 = name;
 	var name1Array = name1.split('/')
-	var button = "<button onclick='dp_del2()' id='x2' style=' border: none; background-color: #1fe0;height:auto; font-size: 0.8em; float:right;'>x</button>"
+	var button1 = "<button onclick='dp_del1()' id='x1' style=' border: none; background-color: #1fe0;height:auto; font-size: 0.8em; float:right;'>x</button>"
+	var button2 = "<button onclick='dp_del2()' id='x2' style=' border: none; background-color: #1fe0;height:auto; font-size: 0.8em; float:right;'>x</button>"
 	fetch(name).then(function(response){
 		response.text().then(function(text){
 			if(document.getElementById("sec1").style.display == "block"){
 				var adress = name;
 				document.getElementById("sec1").innerHTML = text;
 				document.getElementById("home1").innerHTML = name1Array[2];
-				document.getElementById("home1").innerHTML = button;
+				
 				document.getElementById("serchBar1").innerHTML = adress;
 			}
 			else if(document.getElementById("sec2").style.display == "block"){
@@ -61,12 +62,14 @@ function fetchBoard(name){
 				document.getElementById("sec2").innerHTML = text;
 				document.getElementById("home2").innerHTML = name1Array[2];
 				document.getElementById("serchBar2").innerHTML = adress;
+				document.getElementById("home2").innerHTML = button1;
 			}
 			else if(document.getElementById("sec3").style.display == "block"){
 				var adress = name;
 				document.getElementById("sec3").innerHTML = text;
 				document.getElementById("home3").innerHTML = name1Array[2];
 				document.getElementById("serchBar3").innerHTML = adress;
+				document.getElementById("home3").innerHTML = button2;
 			}
 		})
 		 });
