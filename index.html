@@ -95,6 +95,32 @@ function fetchBoard(name){
 		 });
 	
 	}
+function fetchBoard2(name){
+	var name1 = name;
+	var name1Array = name1.split('/');
+	var button1 = "<button onclick='dp_del1()' id='x1' style=' border: none; background-color: #1fe0;height:auto; font-size: 0.8em; float:right;'>x</button>"
+	fetch(name).then(function(response){
+		response.text().then(function(text){
+			var adress = name;
+			document.getElementById("sec2").innerHTML = text;
+			document.getElementById("home2").innerHTML = name1Array[0] + button1;
+			document.getElementById("serchBar2").innerHTML = adress;
+		})
+		 });
+}
+function fetchBoard3(name){
+	var name1 = name;
+	var name1Array = name1.split('/');
+	var button1 = "<button onclick='dp_del2()' id='x2' style=' border: none; background-color: #1fe0;height:auto; font-size: 0.8em; float:right;'>x</button>"
+	fetch(name).then(function(response){
+		response.text().then(function(text){
+			var adress = name;
+			document.getElementById("sec3").innerHTML = text;
+			document.getElementById("home3").innerHTML = name1Array[0] + button1;
+			document.getElementById("serchBar3").innerHTML = adress;
+		})
+		 });
+}
 function dp_menu1(){
     let click = document.getElementById("drop-content1");
     if(click.style.display === "none"){
@@ -135,12 +161,15 @@ function dp_tab1(){
         click1.style.display = "none";
         click2.style.display = "block";
         click3.style.display = "block";
+        click2.style.background = "grey";
+        click4.style.background = "grey";
     }
     if(click4.style.display === "block"){
         click1.style.display = "none";
         click2.style.display = "block";
         click3.style.display = "none";
         click5.style.display = "none";
+        click2.style.background = "grey";
         
     }
     
@@ -151,6 +180,7 @@ function dp_tab2(){
     if(click1.style.display === "block"){
         click1.style.display = "none";
         click2.style.display = "block";
+        click2.style.background = "grey";
     }
 }
 function dp_tab_move1(){
@@ -231,38 +261,160 @@ function dp_del1(){
     let click4 = document.getElementById("+2");
     let click5 = document.getElementById("home3");
     let click6 = document.getElementById("+3");   
+    let click7 = document.getElementById("sec1");
+    let click8 = document.getElementById("sec2");
+    let click9 = document.getElementById("sec3");
+    let click10 = document.getElementById("home1");
     if(click5.style.display === "none"){
+    	if(click10.style.background === "white") {
+            fetchBoard2("Board/latest.html");
+        	click2.style.display = "none";
+            click3.style.display = "block";
+            click4.style.display = "none";
+            setTimeout(function() {click6.style.display = "none"}, 1);
+            setTimeout(function() {click7.style.display = "block"}, 1);
+            setTimeout(function() {click8.style.display = "none"}, 1);
+            setTimeout(function() {click9.style.display = "none"}, 1);
+            setTimeout(function() { click10.style.background = "white"}, 1);
+            return null;
+        }
+    	fetchBoard2("Board/latest.html");
         click2.style.display = "none";
         click3.style.display = "block";
         click4.style.display = "none";
-        fetchBoard('Board/latest.html');
+        setTimeout(function() {click6.style.display = "none"}, 1);
+        click8.style.display = "none";
+        click9.style.display = "none";
+        click7.style.display = "block";
+        click10.style.background = "white";
+        return null;
         
     }
     if(click5.style.display === "block") {
-    	click2.style.display = "none";
-    	click6.style.display = "block";
-    	fetchBoard('Board/latest.html');
+    	 if(click2.style.background === "white") {
+    	   	 fetchBoard2("Board/latest.html");
+    	   	setTimeout(function() {click3.style.display = "none"}, 1);
+    	   	setTimeout(function() {click4.style.display = "none"}, 1);
+    	   	setTimeout(function() {click6.style.display = "block"}, 1);
+    	       setTimeout(function() {click7.style.display = "block"}, 1);
+    	       setTimeout(function() {click8.style.display = "none"}, 1);
+    	       setTimeout(function() {click9.style.display = "none"}, 1);
+    	       setTimeout(function() { click2.style.display = "none"}, 1);
+    	       setTimeout(function() { click10.style.background = "white"}, 1);
+    	      return null;
+    	   }
+    	 if(click5.style.background === "white") {
+          	 fetchBoard2("Board/latest.html");
+          	setTimeout(function() {click3.style.display = "none"}, 1);
+          	setTimeout(function() {click4.style.display = "none"}, 1);
+          	setTimeout(function() {click6.style.display = "block"}, 1);
+              setTimeout(function() {click7.style.display = "block"}, 1);
+              setTimeout(function() {click8.style.display = "none"}, 1);
+              setTimeout(function() {click9.style.display = "none"}, 1);
+              setTimeout(function() { click2.style.display = "none"}, 1);
+              setTimeout(function() { click10.style.background = "grey"}, 1);
+              setTimeout(function() { click5.style.background = "white"}, 1);
+           return null;  
+          }
+    	 if(click10.style.background === "white") {
+        	 fetchBoard2("Board/latest.html");
+        	 setTimeout(function() {click2.style.display = "none"}, 1);
+         	setTimeout(function() {click3.style.display = "none"}, 1);
+         	setTimeout(function() {click4.style.display = "none"}, 1);
+         	setTimeout(function() {click6.style.display = "block"}, 1);
+             setTimeout(function() {click7.style.display = "block"}, 1);
+             setTimeout(function() {click8.style.display = "none"}, 1);
+             setTimeout(function() {click9.style.display = "none"}, 1);
+             setTimeout(function() { click10.style.background = "white"}, 1);
+             setTimeout(function() { click2.style.background = "grey"}, 1);
+             return null;  
+          }
+    	 return null;
     }
 }
+
 function dp_del2(){
     let click1 = document.getElementById("x2");
     let click2 = document.getElementById("home3");
     let click3 = document.getElementById("+2");
     let click4 = document.getElementById("+1");
     let click5 = document.getElementById("+3");
-    if(click1.style.float === "right"){
-        click2.style.display = "none";
-        click3.style.display = "block";
-        fetchBoard('Board/latest.html');
-    }
-    if(click5.style.display === "block"){
-        click5.style.display = "none";
-        click3.style.display = "none";
-        click4.style.display = "block";
-        click2.style.display = "none";
-        fetchBoard('Board/latest.html');
+    let click7 = document.getElementById("sec1");
+    let click8 = document.getElementById("sec2");
+    let click9 = document.getElementById("sec3");
+    let click10 = document.getElementById("home2");
+    let click11 = document.getElementById("home1");
+    if(click10.style.display === "block"){
+    	if(click11.style.background === "white") {
+   	   	 fetchBoard3("Board/latest.html");
+   	   		setTimeout(function() {click3.style.display = "block"}, 1);
+			setTimeout(function() {click4.style.display = "none"}, 1);
+   	   		setTimeout(function() {click5.style.display = "none"}, 1);
+   	       setTimeout(function() {click7.style.display = "block"}, 1);
+   	       setTimeout(function() {click8.style.display = "none"}, 1);
+   	       setTimeout(function() {click9.style.display = "none"}, 1);
+   	       setTimeout(function() { click2.style.display = "none"}, 1);
+   	       setTimeout(function() { click11.style.background = "white"}, 1);
+   	   	   setTimeout(function() { click2.style.background = "grey"}, 1);
+   	      return null;
+   	   }
+    	if(click10.style.background === "white") {
+      	   	 fetchBoard3("Board/latest.html");
+      	   		setTimeout(function() {click3.style.display = "none"}, 1);
+   			setTimeout(function() {click4.style.display = "block"}, 1);
+      	   		setTimeout(function() {click5.style.display = "none"}, 1);
+      	       setTimeout(function() {click7.style.display = "none"}, 1);
+      	       setTimeout(function() {click8.style.display = "block"}, 1);
+      	       setTimeout(function() {click9.style.display = "none"}, 1);
+      	       setTimeout(function() { click2.style.display = "none"}, 1);
+      	       setTimeout(function() { click10.style.background = "white"}, 1);
+      	     setTimeout(function() { click2.style.background = "grey"}, 1);
+      	      return null;
+      	   }
+    	if(click2.style.background === "white") {
+     	   	 fetchBoard3("Board/latest.html");
+     	   		setTimeout(function() {click3.style.display = "block"}, 1);
+  			setTimeout(function() {click4.style.display = "none"}, 1);
+     	   		setTimeout(function() {click5.style.display = "none"}, 1);
+     	       setTimeout(function() {click7.style.display = "none"}, 1);
+     	       setTimeout(function() {click8.style.display = "block"}, 1);
+     	       setTimeout(function() {click9.style.display = "none"}, 1);
+     	       setTimeout(function() { click2.style.display = "none"}, 1);
+     	       setTimeout(function() { click10.style.background = "white"}, 1);
+     	      setTimeout(function() { click2.style.background = "grey"}, 1);
+     	      return null;
+     	   }
+    	}
+    else{
+    	if(click11.style.background === "white") {
+      	   	 fetchBoard3("Board/latest.html");
+      	   		setTimeout(function() {click3.style.display = "none"}, 1);
+   			setTimeout(function() {click4.style.display = "block"}, 1);
+      	   		setTimeout(function() {click5.style.display = "none"}, 1);
+      	       setTimeout(function() {click7.style.display = "block"}, 1);
+      	       setTimeout(function() {click8.style.display = "none"}, 1);
+      	       setTimeout(function() {click9.style.display = "none"}, 1);
+      	       setTimeout(function() {click2.style.display = "none"}, 1);
+      	       setTimeout(function() {click11.style.background = "white"}, 1);
+      	     setTimeout(function() { click2.style.background = "grey"}, 1);
+      	      return null;
+      	   }
+       	if(click2.style.background === "white") {
+         	   	 fetchBoard3("Board/latest.html");
+         	   	   setTimeout(function() {click3.style.display = "none"}, 1);
+      			   setTimeout(function() {click4.style.display = "block"}, 1);
+         	   	   setTimeout(function() {click5.style.display = "none"}, 1);
+         	       setTimeout(function() {click7.style.display = "block"}, 1);
+         	       setTimeout(function() {click8.style.display = "none"}, 1);
+         	       setTimeout(function() {click9.style.display = "none"}, 1);
+         	       setTimeout(function() {click2.style.display = "none"}, 1);
+         	       setTimeout(function() {click11.style.background = "white"}, 1);
+         	      setTimeout(function() { click2.style.background = "grey"}, 1);
+         	      return null;
+         	   }
     }
 }
+
 function autoResize(i)
 {
     var iframeHeight=

@@ -8,16 +8,16 @@
 	<header>
 	 <div id="navbar" style="margin-bottom: 27px;">
   <div id="holder"> 
-  <ul style="margin-top:20px;"> 
+  <ul style="margin-top:20px;" id="myHome"> 
    <li style="cursor:pointer">
-   <a onclick="dp_tab_move2()" id="home1"style="background:white;  font-size:0.8em; font-family: 'DOSMyungjo'; " >
+   <a onclick="dp_tab_move2()" id="home1" class="home" style="background:white;  font-size:0.8em; font-family: 'DOSMyungjo'; " >
    Latest
    </a>
    </li>
    <li style="cursor:pointer;"><a onclick="dp_tab1()" id="+1" style=" border: none; background-color: #d3d3d3; width:20px; margin-top:2px; display:block;   height:auto;">
    +</a>
    </li>
-   <li style="cursor:pointer"><a onclick="dp_tab_move1()" id="home2" style="display:none; font-size:0.8em; background: grey">
+   <li style="cursor:pointer"><a onclick="dp_tab_move1()" class="home" id="home2" style="display:none; font-size:0.8em; background: grey">
    Latest
 	   </a>
    
@@ -27,7 +27,7 @@
    +
    </a>
    </li>
-   <li style="cursor:pointer"><a onclick="dp_tab_move3()" id="home3" style="display:none; font-size:0.8em; background: grey">
+   <li style="cursor:pointer"><a onclick="dp_tab_move3()" id="home3"  class="home" style="display:none; font-size:0.8em; background: grey">
    Latest
 	   </a>
    
@@ -86,17 +86,137 @@
         </div>
     </div>
 </div>
-<section id="sec1" style="border: 5px double; text-align:center; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px; background-color: white; display:block; padding-left:15%; font-family: 'DOSMyungjo';">
-   <h1 style="text-align: center">Dev 게시판은 아직 공사중입니다ㅠㅠ</h1>
-<img src="image\cat.png" alt="catImages" class="catImage" style="float:center; display: block; margin: 0px auto; height: 500px;">
+<section id="sec1" style="border: 5px double; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; padding-bottom:100px; margin-top:10px; background-color: white; display:block; font-family: 'DOSMyungjo';">
+ <h1 style="font-size: 3.0em; text-align: center;">최신 글</h1>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px;">
+<img alt="스프링이란 무엇인가?" src="image/latest/whatIsSpring.png" style="width:100px; height: 100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">스프링이란 무엇인가?</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:60px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">"스프링이란? 자바 엔터프라이즈 애플리케이션 개발에 사용되는 애플리케이션 프레임 워크...."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Java/Column/1-whatIsServlet/1-whatIsServlet.html')">서블릿이란 무엇인가?</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Java/Column/1-whatIsServlet/1-whatIsServlet.html')">"서버에서 웹페이지 등을 동적으로 생성하거나 데이터 처리를 수행하기 위해...."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Computer/LinuxSystem/1-linuxFeature.html')">리눅스의 특징</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Computer/LinuxSystem/1-linuxFeature.html')">"유닉스는 1970년대 초에 미국........."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+미정
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">""</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+미정
+</div>
+<div style="height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">""</a>
+</div>
 </section>
-<section id="sec2" style="border: 5px double; text-align:center; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px; background-color: white; display: none; padding-left:15%; font-family: 'DOSMyungjo';">
-   <h1 style="text-align: center">Dev 게시판은 아직 22222공사중입니다ㅠㅠ</h1>
-<img src="image\cat.png" alt="catImages" class="catImage" style="float:center; display: block; margin: 0px auto; height: 500px;">
+<section id="sec2" style="border: 5px double; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px; padding-bottom:100px; background-color: white; display: none; font-family: 'DOSMyungjo';">
+<h1 style="font-size: 3.0em; text-align: center;">최신 글</h1>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px;">
+<img alt="스프링이란 무엇인가?" src="image/latest/whatIsSpring.png" style="width:100px; height: 100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">스프링이란 무엇인가?</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:60px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">"스프링이란? 자바 엔터프라이즈 애플리케이션 개발에 사용되는 애플리케이션 프레임 워크...."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Java/Column/1-whatIsServlet/1-whatIsServlet.html')">서블릿이란 무엇인가?</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Java/Column/1-whatIsServlet/1-whatIsServlet.html')">"서버에서 웹페이지 등을 동적으로 생성하거나 데이터 처리를 수행하기 위해...."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Computer/LinuxSystem/1-linuxFeature.html')">리눅스의 특징</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Computer/LinuxSystem/1-linuxFeature.html')">"유닉스는 1970년대 초에 미국........."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+미정
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">""</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+미정
+</div>
+<div style="height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">""</a>
+</div>
 </section>
-<section id="sec3" style="border: 5px double; text-align:center; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px; background-color: white; display: none; padding-left:15%; font-family: 'DOSMyungjo';">
-   <h1 style="text-align: center">Dev 게시판은 아직 33333공사중입니다ㅠㅠ</h1>
-<img src="image\cat.png" alt="catImages" class="catImage" style="float:center; display: block; margin: 0px auto; height: 500px;">
+<section id="sec3" style="border: 5px double; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; padding-bottom:100px; margin-top:10px; background-color: white; display: none; font-family: 'DOSMyungjo';">
+<h1 style="font-size: 3.0em; text-align: center;">최신 글</h1>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px;">
+<img alt="스프링이란 무엇인가?" src="image/latest/whatIsSpring.png" style="width:100px; height: 100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">스프링이란 무엇인가?</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:60px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">"스프링이란? 자바 엔터프라이즈 애플리케이션 개발에 사용되는 애플리케이션 프레임 워크...."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Java/Column/1-whatIsServlet/1-whatIsServlet.html')">서블릿이란 무엇인가?</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Java/Column/1-whatIsServlet/1-whatIsServlet.html')">"서버에서 웹페이지 등을 동적으로 생성하거나 데이터 처리를 수행하기 위해...."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+<a onclick="fetchBoard('Board/Computer/LinuxSystem/1-linuxFeature.html')">리눅스의 특징</a>
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Computer/LinuxSystem/1-linuxFeature.html')">"유닉스는 1970년대 초에 미국........."</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+미정
+</div>
+<div style=" height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">""</a>
+</div><br>
+<div style="border: 10px double; height:100px; width:100px; display: inline-block; background-color: white; margin-left:200px; margin-top:100px;">
+</div>
+<div style=" height:60px; width:500px; display: inline-block; position: absolute;  background-color: white; margin-left:15px; margin-top:100px; border-bottom:none;  font-size: 1.5em; border-right:none; line-height:60px;">
+미정
+</div>
+<div style="height:50px; width:1000px; display: inline-block; position: absolute; background-color: white; margin-left:15px; margin-top:160px; border-bottom:none; border-right:none; font-size: 1.0em; line-height:60px;">
+<a style="text-decoration: underline;"onclick="fetchBoard('Board/Spring/TobySpring/1-whatIsSpring.html')">""</a>
+</div>
 </section>
 </body>
 </html>
